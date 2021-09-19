@@ -1,0 +1,74 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+navbar{
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  height:15vh;
+  background-color: darkgoldenrod;
+  color:#fff;
+}
+.logo{
+  margin: 0 50px;
+  font-size: 2rem;
+  font-family: "Roboto";
+}
+button{
+  background-color: rgb(87, 65, 65);
+  border: none;
+  box-shadow: 2px 2px #fff;
+  border-radius: 10px;
+  width:200px;
+  height:30px;
+  font-size: larger;
+  margin: 0 50px;
+  color:lightseagreen;
+  cursor: pointer;
+}
+button:hover{
+  transform: scale(1.2);
+}
+main{
+  background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.6)), url("https://www.incimages.com/uploaded_files/image/1920x1080/getty_510591490_356091.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width:100%;
+  height:100vh;
+
+}
+.below{
+  text-align: center;
+  color: #fff;
+  font-weight: 500;
+  font-size: 1.4rem;
+  letter-spacing: 2;
+  font-family: "Roboto";
+  padding:3% 10%;
+  background-color: darkgoldenrod;
+}
+.loader {
+  border: 10px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 10px solid #0000ff;
+  margin-top: 50%;
+  width: 60px;
+  height: 60px;
+  -webkit-animation: spin 2s linear infinite;
+  /* Safari */
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+      transform: rotate(0deg);
+  }
+
+  100% {
+      transform: rotate(360deg);
+  }
+}
